@@ -14,7 +14,7 @@ export default function ShrinkingText({ text,textColor }: { text: string ,
   }, []);
 
   // Get text's position relative to viewport
-  const startShrinking = useTransform(scrollY, (y) => {
+  const startShrinking = useTransform(scrollY, () => {
     if (!ref.current) return 0;
     const rect = ref.current.getBoundingClientRect();
     return rect.top + 10; // Shrinking starts when text reaches -10px from the top

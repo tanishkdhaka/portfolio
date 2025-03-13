@@ -25,7 +25,7 @@ export default function Clock() {
 
   return (
     <div className="text-lg font-bold">
-      <span className="text-[#8082F8]">{time} : IST</span>
+      <span className="text-[#8082F8]">{time} </span>{" "}: IST
     </div>
   );
 }
