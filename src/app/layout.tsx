@@ -5,37 +5,36 @@ import { Bebas_Neue } from "next/font/google";
 import Footer from "@/components/Footer";
 import Script from "next/script";
 
-
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tanishk Dhaka | Software Engineer & Creative Coder",
+  title: "Tanishk Dhaka Portfolio | Software Engineer & Web Developer",
   description:
-    "Portfolio of Tanishk Dhaka, a software engineer and creative coder. Check out my projects and skills.",
+    "Explore the portfolio of Tanishk Dhaka, a software engineer and full-stack web developer specializing in Next.js, React, and creative coding.",
   keywords:
-    "Tanishk Dhaka, software engineer, portfolio, creative coding, web developer, full-stack developer",
+    "Tanishk Dhaka, Tanishk Portfolio, software engineer, web developer, full-stack developer, Next.js developer, React developer, creative coding, freelance web developer",
   authors: [{ name: "Tanishk Dhaka" }],
   openGraph: {
-    title: "Tanishk Dhaka | Software Engineer",
+    title: "Tanishk Dhaka Portfolio | Software Engineer & Web Developer",
     description:
-      "Explore my projects and skills in web development and creative coding.",
+      "Explore my projects and skills in web development, Next.js, and creative coding.",
     url: "https://tanishkdhaka.com",
-    siteName: "Tanishk Dhaka",
+    siteName: "Tanishk Dhaka Portfolio",
     images: [
       {
         url: "/heroImage.png",
         width: 1200,
         height: 630,
-        alt: "Tanishk Dhaka Portfolio",
+        alt: "Tanishk Dhaka Portfolio - Web Developer & Software Engineer",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tanishk Dhaka | Software Engineer",
+    title: "Tanishk Dhaka Portfolio | Software Engineer & Web Developer",
     description:
-      "Explore my projects and skills in web development and creative coding.",
+      "Explore my projects and skills in web development, Next.js, and creative coding.",
     images: ["/heroImage.png"],
   },
 };
@@ -46,8 +45,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* ✅ Schema Markup for SEO */}
-        <Script id="schema-markup"
+        {/* ✅ Schema Markup for SEO & Google Rich Results */}
+        <Script
+          id="schema-markup"
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -59,12 +59,12 @@ export default function RootLayout({
               "sameAs": [
                 "https://www.linkedin.com/in/tanishkdhaka",
                 "https://github.com/tanishkdhaka",
-                "https://twitter.com/tanishkdhaka",
+                "https://twitter.com/tanishkdhaka"
               ],
-              "jobTitle": "Software Engineer",
+              "jobTitle": "Software Engineer & Web Developer",
               "worksFor": {
                 "@type": "Organization",
-                "name": "Your Current Company (if any)",
+                "name": "Freelance / Open to Work"
               },
             }),
           }}
