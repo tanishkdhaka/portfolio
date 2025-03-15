@@ -10,7 +10,10 @@ import { FaRegCopyright } from "react-icons/fa6";
 function Footer() {
   const pathname = usePathname();
 
-  const textColor = pathname === "/blogs" ? "#F4A261" : "#8082F8"; // Default color
+  const textColor =
+  pathname === "/blogs" ? "#F4A261" : 
+  pathname === "/contact" ? "#e62161" : 
+  "#8082F8";
   return (
     <footer className="w-100vw md:px-10 p-3 md:text-2xl font-semibold uppercase  gap-4 flex flex-col">
       {/* name/available */}

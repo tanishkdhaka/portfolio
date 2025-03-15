@@ -46,7 +46,7 @@ export default function Home() {
           }
           
         }
-          className="flex h-auto  leading-loose relative items-center font-extrabold md:pt-16 pt-7 normal-case justify-center text-2xl md:text-5xl lg:text-8xl lg:leading-20 tracking-wide flex-col  "
+          className="flex h-auto  leading-loose relative items-center font-extrabold md:pt-16 pt-7 normal-case justify-center text-2xl md:text-5xl xl:text-8xl lg:leading-20 tracking-wide flex-col  "
         >
           <div className={clsx("transition-colors duration-100",hoverText2&&"outline-text")}>Software Engineer</div>
           <div
@@ -62,7 +62,7 @@ export default function Home() {
             fontFamily: "MediaSansBold",
             transform: " ",
           }}
-          className="flex h-auto  leading-loose relative items-center font-extrabold  normal-case justify-center text-2xl md:text-5xl lg:text-8xl lg:leading-20 tracking-wide flex-col "
+          className="flex h-auto  leading-loose relative items-center font-extrabold  normal-case justify-center text-2xl md:text-5xl xl:text-8xl lg:leading-20 tracking-wide flex-col "
         >
           <div className={clsx("outline-text transition-colors duration-100",hoverText2&&"outline-text2")}>& Creative Coder</div>
          

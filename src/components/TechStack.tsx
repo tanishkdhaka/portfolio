@@ -11,7 +11,7 @@ const TechStack = () => {
                     <div className="gap-3 flex flex-col">
                         {
                             category.skills.map(({name, icon: Icon, desc})=>(
-                                <div key={name} className="flex text-xl bg-black py-4 px-6 flex-col md:flex-row rounded-xl text-white  justify-between">
+                                <div key={name} className="flex text-xl  py-4 px-6 bg-[#fff5ee] flex-col md:flex-row rounded-lg border-gray-300 border-b-2  justify-between">
                                   <div className="flex gap-2">  <Icon className="w-6 h-6 text-blue-400" /> {name}</div>
                                   <div>{desc}</div>
                                 </div>

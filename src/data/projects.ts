@@ -10,7 +10,7 @@ export const ProjectData = [
     {
         name:"Chat-box",
         tags:["nextjs","supabase","uploadthing",],
-        live:"https://vercel.com/tannijaats-projects/chatbox",
+        live:"https://chatbox-hazel-eight.vercel.app/",
         img:"/chatBox.png"
     },
     {

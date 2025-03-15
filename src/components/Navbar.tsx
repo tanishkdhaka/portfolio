@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import StretchText from "./Scrolltext";
 import { BsEnvelopeAtFill, BsStars } from "react-icons/bs";
 import { usePathname, useRouter } from "next/navigation";
+import BurgerMenu from "./burgerMenu";
+
 
 function Navbar() {
   const [copied, setCopied] = useState(false);
@@ -42,10 +44,9 @@ function Navbar() {
   };
 
   const textColor =
-    pathname === "/blogs" ? "text-[#F4A261]" : "text-[#8082F8]";
-
+    pathname === "/blogs" ? "[#F4A261]":pathname==="/contact"?"[#e62161]" : "[#8082F8]"  
   return (
-    <nav className={`grid grid-cols-2 w-full ${textColor} fixed top-0 z-[1000] text-[1.5rem] font-extrabold bg-transparent p-5 uppercase`}>
+    <nav className={`grid grid-cols-2 w-full text-${textColor} fixed top-0 z-[1000] text-[1.5rem] font-extrabold bg-transparent p-5 uppercase`}>
       <div className="flex gap-4 items-center">
         <StretchText textColor={textColor} />
         <div className="lg:flex hidden gap-1 items-center">
@@ -76,12 +77,13 @@ function Navbar() {
           <button
             key={index}
             onClick={() => handleNavigation(link.href)}
-            className="hover:underline underline-offset-4 transition-all duration-300"
+            className="hover:underline cursor-pointer underline-offset-4 transition-all duration-300"
           >
             {link.name}
           </button>
         ))}
       </div>
+      <BurgerMenu />
     </nav>
   );
 }
