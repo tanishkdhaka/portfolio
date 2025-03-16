@@ -33,6 +33,24 @@ body {
   
 }
 
+
+html, body {
+  overflow-x: hidden;
+}
+
+@keyframes softBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px); /* smaller bounce */
+  }
+}
+
+.soft-bounce {
+  animation: softBounce 2s ease-in-out infinite;
+}
+
 :root {
   --background: #fff5ee;
   
