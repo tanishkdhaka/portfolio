@@ -13,7 +13,7 @@ function Navbar() {
   const router = useRouter();
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText("er.tanishkdhaka@gmail.com");
+    navigator.clipboard.writeText("info@tanishkdhaka.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 800);
   };
@@ -58,7 +58,7 @@ function Navbar() {
               {copied ? "Copied!" : "Copy!"}
             </span>
           </button>
-          <Link href="mailto:er.tanishkdhaka@gmail.com">info@tanishkdhaka.com</Link>
+          <Link href="mailto:info@tanishkdhaka.com">info@tanishkdhaka.com</Link>
           <h1 className="flex items-center gap-2">
             <BsStars className="text-lg" />
             Available March 2025
