@@ -47,7 +47,7 @@ function Footer() {
                 onMouseEnter={(e) => (e.currentTarget.style.color = textColor)} // Change this to any hover color
                 onMouseLeave={(e) => (e.currentTarget.style.color = "black" )}
             
-            href="mailto:er.tanishkdhaka@gmail.com"
+            href="mailto:info@tanishkdhaka.com"
           >
             <BsArrowRight /> info@tanishkdhaka.com
           </Link>
