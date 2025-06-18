@@ -58,7 +58,7 @@ function Footer() {
         <div className="flex items-end gap-4">
             <h1>Social</h1>
             <ul style={{font:"revert-layer",textDecorationColor:textColor}} className="flex font-thin  !text-xs md:!text-[1rem] gap-3 underline pb-1 ">
-                <li><Link href={"https://github.com/TanniTemp"} target="_blank">Github</Link></li>
+                <li><Link href={"https://github.com/tanishkdhaka"} target="_blank">Github</Link></li>
                 <li><Link href={"https://www.linkedin.com/in/tanishk-dhaka-82aab0217/"} target="_blank">LinkedIn</Link></li>
             </ul>
         </div>
