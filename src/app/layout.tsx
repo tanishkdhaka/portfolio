@@ -11,7 +11,12 @@ export const metadata: Metadata = {
   title: "Tanishk Dhaka Portfolio | Software Engineer & Web Developer",
   description:
     "Explore the portfolio of Tanishk Dhaka, a software engineer and full-stack web developer specializing in Next.js, React, and creative coding.",
-  keywords:
+    icons: {
+      icon: '/contact.png',
+      shortcut: '/contact.png',
+      apple: '/contact.png',
+    },
+    keywords:
     "Tanishk Dhaka, Tanishk Portfolio, software engineer, web developer, full-stack developer, Next.js developer, React developer, creative coding, freelance web developer",
   authors: [{ name: "Tanishk Dhaka" }],
   openGraph: {

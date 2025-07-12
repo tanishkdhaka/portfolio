@@ -1,6 +1,14 @@
 
 
 export const ProjectData = [
+    
+    {
+        name: "Sabar-com",
+        tags: ["E-com", "nextjs","razorpay"],
+        live:"https://sabar-ecom.vercel.app/",
+        img:"/sabar.png"
+    },
+
     {
         name: "Case Cobra",
         tags: ["E-com", "nextjs","stripe"],
