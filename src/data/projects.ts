@@ -1,14 +1,12 @@
 
 
 export const ProjectData = [
-    
     {
-        name: "Sabar-com",
+        name: "Poster Boys",
         tags: ["E-com", "nextjs","razorpay"],
-        live:"https://sabar-ecom.vercel.app/",
-        img:"/sabar.png"
+        live:"https://www.posterboys.store/",
+        img:"/posterboys.png"
     },
-
     {
         name: "Case Cobra",
         tags: ["E-com", "nextjs","stripe"],
@@ -16,9 +14,9 @@ export const ProjectData = [
         img:"/caseCobra.png"
     },
     {
-        name:"Chat-box",
+        name:"GLobalChat",
         tags:["nextjs","supabase","uploadthing",],
-        live:"https://chatbox-hazel-eight.vercel.app/",
+        live:"",
         img:"/chatBox.png"
     },
     {
