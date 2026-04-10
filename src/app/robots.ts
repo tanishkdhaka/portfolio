@@ -2,9 +2,13 @@ import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: [
-      { userAgent: "*", allow: "/" }, // Allow all search engines
-    ],
-    sitemap: "https://tanishkdhaka.com/sitemap.xml",
+   rules: [
+  {
+    userAgent: "*",
+    allow: "/",
+    disallow: ["/api/", "/_next/", "/static/"],
+  },
+],
+sitemap: "https://tanishkdhaka.com/sitemap.xml",
   };
 }
