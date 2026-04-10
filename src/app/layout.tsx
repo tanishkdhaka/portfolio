@@ -187,9 +187,9 @@ export default function RootLayout({
         />
       </head>
       <body className={`${bebasNeue.className} antialiased`}>
-        <Navbar />
+      
         {children}
-        <Footer />
+        
       </body>
     </html>
   );

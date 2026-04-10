@@ -71,8 +71,10 @@ function Navbar() {
         {[
           { name: "About", href: "/" }, // Scrolls to top if already on /
           { name: "Projects", href: "#projects" },
+          {name:"Hire",href:"/hire"},
           { name: "Blogs", href: "/blogs" },
           { name: "Contact", href: "/contact" },
+          
         ].map((link, index) => (
           <button
             key={index}

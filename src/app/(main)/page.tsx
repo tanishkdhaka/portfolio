@@ -6,7 +6,7 @@ import ShrinkingText from "@/components/ui/Shrinkingtext";
 
 export default function Home() {
   return (
-    <div className="bg-[#fff5ee] w-[100vw]">
+    <div className="bg-[#fff5ee] w-full overflow-x-hidden">
       
       {/* Hero Section — client only for interactivity */}
       <HeroClient />
@@ -14,6 +14,7 @@ export default function Home() {
       {/* Projects Section */}
       <div id="projects" className="text-black relative w-[100vw]">
         <div className="h-10"></div>
+        
         <ShrinkingText text={"Projects"} textColor={"text-[#F4A261]"} as="h2" />
         <div className="h-20"></div>
         <Projects />

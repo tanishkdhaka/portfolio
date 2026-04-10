@@ -77,6 +77,9 @@ const BurgerMenu = () => {
           <Link href="/#projects" onClick={() => setIsOpen(false)}>
             Projects
           </Link>
+          <Link href="/hire" onClick={() => setIsOpen(false)}>
+            Hire
+          </Link>
           <Link href="/blogs" onClick={() => setIsOpen(false)}>
             Blogs
           </Link>

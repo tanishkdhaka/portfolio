@@ -26,5 +26,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.5,
     },
+    { url: "https://tanishkdhaka.com/hire", lastModified: new Date("2025-04-01"), changeFrequency: "monthly", priority: 0.9 }
   ];
 }
