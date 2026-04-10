@@ -14,14 +14,14 @@ export default function Home() {
       {/* Projects Section */}
       <div id="projects" className="text-black relative w-[100vw]">
         <div className="h-10"></div>
-        <ShrinkingText text={"Projects"} textColor={"text-[#F4A261]"} />
+        <ShrinkingText text={"Projects"} textColor={"text-[#F4A261]"} as="h2" />
         <div className="h-20"></div>
         <Projects />
       </div>
 
       {/* Tech Stack Section */}
       <div className="text-black min-h-screen w-[100vw]">
-        <ShrinkingText text={"Tech Stack"} textColor={"text-[#f13a3b]"} />
+        <ShrinkingText text={"Tech Stack"} textColor={"text-[#f13a3b]"} as="h2" />
         <div className="h-20"></div>
         <TechStack />
       </div>

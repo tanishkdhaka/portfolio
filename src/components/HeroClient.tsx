@@ -31,9 +31,9 @@ export default function HeroClient() {
           </span>{" "}
           , i am{" "}
         </div>
-        <h1>
-          <ShrinkingText text={"Tanishk Dhaka"} textColor={"text-[#8082F8]"} />
-        </h1>
+       
+          <ShrinkingText text={"Tanishk Dhaka"} textColor={"text-[#8082F8]"}  as="h1"/>
+       
 
         <div className="flex flex-col md:gap-5">
           <div

@@ -24,7 +24,7 @@ function Footer() {
         >
           Tanishk Dhaka
         </div>
-        <div>Available March 2025</div>
+        <div>Available April 2026</div>
       </div>
       {/* working days/ project in mind */}
       <div className="flex flex-col md:flex-row gap-3 w-full md:p-3 justify-between">

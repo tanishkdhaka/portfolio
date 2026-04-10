@@ -80,7 +80,9 @@ const ContactPage = () => {
         style={{ fontFamily: "monospace" }}
         className="flex items-start p-5 gap-4 flex-col justify-center"
       >
-        <h1 className="font-semibold text-3xl">Let&#39;s Connect</h1>
+       <h1 className="font-semibold text-3xl">
+  Hire Tanishk Dhaka — Freelance Web Developer
+</h1>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full">
           <div className="flex flex-wrap gap-3">

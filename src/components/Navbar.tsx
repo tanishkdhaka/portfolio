@@ -50,7 +50,7 @@ function Navbar() {
       <div className="flex gap-4 items-center">
         <StretchText textColor={textColor} />
         <div className="lg:flex hidden gap-1 items-center">
-          <button onClick={copyToClipboard} className="relative cursor-pointer group">
+          <button onClick={copyToClipboard}   aria-label="Copy email address"   className="relative cursor-pointer group">
             <BsEnvelopeAtFill className="text-lg" />
             <span className={`absolute -left-2 top-5 text-white bg-[#8082F8] px-2 py-1 text-sm rounded-sm transition-opacity duration-400 ${
                 copied ? "opacity-100" : "opacity-0"

@@ -114,7 +114,7 @@ const BurgerMenu = () => {
         <div className="bg-white h-[2px] my-3 w-full"></div>
 
         <div className="flex text-xl justify-between font-normal flex-wrap">
-          <div>Available March 2025</div>
+          <div>Available April 2026</div>
           <Link href="mailto:er.tanishkdhaka@gmail.com">
             info@tanishkdhaka.com
           </Link>

@@ -84,12 +84,10 @@ export const metadata: Metadata = {
     title: "Tanishk Dhaka | Software Engineer & Full-Stack Developer",
     description:
       "Explore projects and skills in full-stack development, Next.js, React, and creative coding.",
-    site: "@tanishkdhaka",    // ✅ Your Twitter handle
+    site: "@tanishkdhaka", // ✅ Your Twitter handle
     creator: "@tanishkdhaka", // ✅ Enables author attribution on Twitter cards
     images: ["/heroImage.png"],
   },
-
- 
 };
 
 export default function RootLayout({
@@ -107,21 +105,36 @@ export default function RootLayout({
             __html: JSON.stringify([
               {
                 "@context": "https://schema.org",
-                "@type": "Person",
+                "@type": ["Person", "LocalBusiness"],
                 name: "Tanishk Dhaka",
                 url: "https://tanishkdhaka.com",
                 image: "https://tanishkdhaka.com/heroImage.png",
                 jobTitle: "Software Engineer & Full-Stack Web Developer",
                 description:
                   "Full-stack developer specializing in Next.js, React, and TypeScript.",
+                // ✅ NEW — LocalBusiness fields
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Delhi",
+                  addressRegion: "Delhi",
+                  addressCountry: "IN",
+                },
+                areaServed: ["Delhi", "India", "Remote"],
+                priceRange: "$$",
+                openingHours: "Mo-Fr 09:00-18:00",
                 sameAs: [
                   "https://www.linkedin.com/in/tanishkdhaka",
                   "https://github.com/tanishkdhaka",
                   "https://twitter.com/tanishkdhaka",
                 ],
+
                 knowsAbout: [
-                  "Next.js", "React", "TypeScript",
-                  "Node.js", "Full-Stack Development", "Web Performance",
+                  "Next.js",
+                  "React",
+                  "TypeScript",
+                  "Node.js",
+                  "Full-Stack Development",
+                  "Web Performance",
                 ],
                 worksFor: {
                   "@type": "Organization",
@@ -134,6 +147,40 @@ export default function RootLayout({
                 "@type": "WebSite",
                 name: "Tanishk Dhaka Portfolio",
                 url: "https://tanishkdhaka.com",
+              },
+              // ✅ NEW — BreadcrumbList (home page)
+              {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: "https://tanishkdhaka.com",
+                  },
+                ],
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "ItemList",
+                name: "Projects by Tanishk Dhaka",
+                description: "Web development projects built by Tanishk Dhaka",
+                itemListElement: [
+                  // Replace these with your actual projects from ProjectData
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Your Project 1 Name",
+                    url: "https://yourproject1.com",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Your Project 2 Name",
+                    url: "https://yourproject2.com",
+                  },
+                ],
               },
             ]),
           }}

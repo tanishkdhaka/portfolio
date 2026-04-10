@@ -2,8 +2,10 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-export default function ShrinkingText({ text,textColor }: { text: string ,
-  textColor:string,
+export default function ShrinkingText({ text, textColor, as: Tag = "h2" }: {
+  text: string;
+  textColor: string;
+  as?: "h1" | "h2" | "h3";
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollY } = useScroll();
@@ -27,13 +29,10 @@ export default function ShrinkingText({ text,textColor }: { text: string ,
   ]);
 
   return (
-    <div ref={ref} className={`sticky z-[10] top-6 flex flex-col text-4xl justify-start items-center ${textColor}`}>
-      <motion.div
-        style={{ fontSize }}
-        className="font-bold text-[4rem] sm:text-2xl"
-      >
+    <Tag ref={ref} className={`sticky z-[10] top-6 flex flex-col text-4xl justify-start items-center ${textColor}`}>
+      <motion.div style={{ fontSize }} className="font-bold text-[4rem] sm:text-2xl">
         {text}
       </motion.div>
-    </div>
+    </Tag>
   );
 }

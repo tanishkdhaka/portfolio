@@ -1,6 +1,9 @@
 "use client";
 import { motion, useMotionValue, useSpring } from "framer-motion";
+import Image from "next/image";
 import { useEffect } from "react";
+
+const MotionImage = motion(Image);
 
 export default function FloatingImage({ className }: { className?: string }) {
   const x = useMotionValue(0);
@@ -21,10 +24,12 @@ export default function FloatingImage({ className }: { className?: string }) {
   }, [x, y]);
 
   return (
-    <motion.img
+    <MotionImage
       src="/heroImage.png"
-      alt="Floating Image"
-      className={`absolute bottom-0 max-w-[80%] ${className}`}
+    alt="Tanishk Dhaka - Software Engineer and Full Stack Web Developer"  // ← also improved alt text for SEO
+  className={`absolute bottom-0 max-w-[80%] ${className}`}
+  priority={true} 
+  
       style={{
         x: smoothX,
         y: smoothY,
