@@ -88,7 +88,7 @@ const BurgerMenu = () => {
         <div className="bg-white h-[2px] my-3 w-full"></div>
 
         <div>
-          <h1 className="text-xl font-normal">Socials</h1>
+          <p className="text-xl font-normal">Socials</p>
           <ul
             style={{ font: "revert-layer" }}
             className="flex flex-col text-2xl tracking-wide gap-0.5"

@@ -8,40 +8,88 @@ import Script from "next/script";
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tanishk Dhaka Portfolio | Software Engineer & Web Developer",
+  metadataBase: new URL("https://tanishkdhaka.com"), // ✅ Critical for absolute OG URLs
+
+  title: {
+    default: "Tanishk Dhaka | Software Engineer & Full-Stack Developer",
+    template: "%s | Tanishk Dhaka", // ✅ Page-specific titles inherit this
+  },
+
   description:
-    "Explore the portfolio of Tanishk Dhaka, a software engineer and full-stack web developer specializing in Next.js, React, and creative coding.",
-    icons: {
-      icon: '/contact.png',
-      shortcut: '/contact.png',
-      apple: '/contact.png',
+    "Tanishk Dhaka is a software engineer and full-stack web developer specializing in Next.js, React, TypeScript, and creative web experiences. Available for freelance projects.",
+
+  keywords: [
+    "Tanishk Dhaka",
+    "Tanishk Dhaka portfolio",
+    "software engineer",
+    "full-stack developer",
+    "Next.js developer",
+    "React developer",
+    "TypeScript developer",
+    "web developer India",
+    "freelance web developer",
+    "creative developer",
+    "frontend developer",
+    "UI developer",
+  ],
+
+  authors: [{ name: "Tanishk Dhaka", url: "https://tanishkdhaka.com" }],
+  creator: "Tanishk Dhaka",
+  publisher: "Tanishk Dhaka",
+
+  // ✅ Canonical URL — prevents duplicate content penalties
+  alternates: {
+    canonical: "https://tanishkdhaka.com",
+  },
+
+  // ✅ Tells crawlers to index and follow
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
-    keywords:
-    "Tanishk Dhaka, Tanishk Portfolio, software engineer, web developer, full-stack developer, Next.js developer, React developer, creative coding, freelance web developer",
-  authors: [{ name: "Tanishk Dhaka" }],
+  },
+
+  icons: {
+    icon: [{ url: "/contact.png" }],
+    shortcut: "/contact.png",
+    apple: "/contact.png",
+  },
+
   openGraph: {
-    title: "Tanishk Dhaka Portfolio | Software Engineer & Web Developer",
+    title: "Tanishk Dhaka | Software Engineer & Full-Stack Developer",
     description:
-      "Explore my projects and skills in web development, Next.js, and creative coding.",
+      "Explore projects and skills in full-stack development, Next.js, React, and creative coding by Tanishk Dhaka.",
     url: "https://tanishkdhaka.com",
-    siteName: "Tanishk Dhaka Portfolio",
+    siteName: "Tanishk Dhaka",
+    locale: "en_US",
+    type: "website",
     images: [
       {
-        url: "/heroImage.png",
+        url: "/heroImage.png", // metadataBase makes this absolute automatically
         width: 1200,
         height: 630,
-        alt: "Tanishk Dhaka Portfolio - Web Developer & Software Engineer",
+        alt: "Tanishk Dhaka — Software Engineer & Full-Stack Web Developer",
+        type: "image/png",
       },
     ],
-    type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Tanishk Dhaka Portfolio | Software Engineer & Web Developer",
+    title: "Tanishk Dhaka | Software Engineer & Full-Stack Developer",
     description:
-      "Explore my projects and skills in web development, Next.js, and creative coding.",
+      "Explore projects and skills in full-stack development, Next.js, React, and creative coding.",
+    site: "@tanishkdhaka",    // ✅ Your Twitter handle
+    creator: "@tanishkdhaka", // ✅ Enables author attribution on Twitter cards
     images: ["/heroImage.png"],
   },
+
+ 
 };
 
 export default function RootLayout({
@@ -50,28 +98,44 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* ✅ Schema Markup for SEO & Google Rich Results */}
+        {/* ✅ Combined Person + WebSite Schema for richer Google results */}
         <Script
           id="schema-markup"
           type="application/ld+json"
-          strategy="afterInteractive"
+          strategy="beforeInteractive" // ✅ Load before page paint for crawlers
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Tanishk Dhaka",
-              "url": "https://tanishkdhaka.com",
-              "sameAs": [
-                "https://www.linkedin.com/in/tanishkdhaka",
-                "https://github.com/tanishkdhaka",
-                "https://twitter.com/tanishkdhaka"
-              ],
-              "jobTitle": "Software Engineer & Web Developer",
-              "worksFor": {
-                "@type": "Organization",
-                "name": "Freelance / Open to Work"
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                name: "Tanishk Dhaka",
+                url: "https://tanishkdhaka.com",
+                image: "https://tanishkdhaka.com/heroImage.png",
+                jobTitle: "Software Engineer & Full-Stack Web Developer",
+                description:
+                  "Full-stack developer specializing in Next.js, React, and TypeScript.",
+                sameAs: [
+                  "https://www.linkedin.com/in/tanishkdhaka",
+                  "https://github.com/tanishkdhaka",
+                  "https://twitter.com/tanishkdhaka",
+                ],
+                knowsAbout: [
+                  "Next.js", "React", "TypeScript",
+                  "Node.js", "Full-Stack Development", "Web Performance",
+                ],
+                worksFor: {
+                  "@type": "Organization",
+                  name: "Freelance",
+                },
               },
-            }),
+              {
+                // ✅ Enables Google Sitelinks Searchbox (bonus SEO)
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "Tanishk Dhaka Portfolio",
+                url: "https://tanishkdhaka.com",
+              },
+            ]),
           }}
         />
       </head>

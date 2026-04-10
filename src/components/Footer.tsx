@@ -29,10 +29,10 @@ function Footer() {
       {/* working days/ project in mind */}
       <div className="flex flex-col md:flex-row gap-3 w-full md:p-3 justify-between">
         <div className="gap-2">
-          <h1 className="font-semibold tracking-wider">Working days</h1>
-          <h2 style={{ font: "status-bar" }} className="font-thin opacity-70 ">
+          <div className="font-semibold tracking-wider">Working days</div>
+          <div style={{ font: "status-bar" }} className="font-thin opacity-70 ">
             Monday-Friday
-          </h2>
+          </div>
         </div>
         <div className="flex flex-col md:items-end">
           <div className="font-semibold tracking-wider">
@@ -56,7 +56,7 @@ function Footer() {
       {/* socials link */}
       <div className="md:flex md:p-3 gap-3 justify-between">
         <div className="flex items-end gap-4">
-            <h1>Social</h1>
+            <div>Social</div>
             <ul style={{font:"revert-layer",textDecorationColor:textColor}} className="flex font-thin  !text-xs md:!text-[1rem] gap-3 underline pb-1 ">
                 <li><Link href={"https://github.com/tanishkdhaka"} target="_blank">Github</Link></li>
                 <li><Link href={"https://www.linkedin.com/in/tanishk-dhaka-82aab0217/"} target="_blank">LinkedIn</Link></li>

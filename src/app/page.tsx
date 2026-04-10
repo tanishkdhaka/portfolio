@@ -34,7 +34,7 @@ export default function Home() {
           Hey {" "}<span className=" scale-150 px-4 hover:animate-[ping_0.7s_ease-out_forwards]  rotate-12">👋</span> {" "},
           i am{" "}
         </div>
-        <ShrinkingText text={"Tanishk Dhaka"} textColor={"text-[#8082F8]"} />
+      <h1>  <ShrinkingText text={"Tanishk Dhaka"} textColor={"text-[#8082F8]"} /></h1>
         {/* text/Image setup */}
        <div className=" flex flex-col md:gap-5">
        <div
@@ -72,7 +72,7 @@ export default function Home() {
         </div>
        </div>
         <div className="grid grid-cols-2 pt-8 md:text-xl text-lg ">
-          <div className="flex  items-center justify-center lowercase gap-1"> <FaLocationDot />Based in <h1 className="text-[#8082F8]"> Delhi</h1> ,India <Image src={"/flag.png"} alt={"india flag"} height={20} width={20} /> </div>
+          <div className="flex  items-center justify-center lowercase gap-1"> <FaLocationDot />Based in <h2 className="text-[#8082F8]"> Delhi</h2> ,India <Image src={"/flag.png"} alt={"india flag"} height={20} width={20} /> </div>
           <div className="flex items-center justify-center"><Clock/></div>
         </div>
         <div>
@@ -103,12 +103,12 @@ export default function Home() {
         <div className="h-40"></div>
         
         <div className="flex flex-col text-black p-6 mx-auto max-w-screen-md  bg-[#e9e6cd] border-2 border-black rounded-2xl text-2xl ">
-         <h1 className="mx-auto" >TimeLine</h1>
+         <h2 className="mx-auto" >TimeLine</h2>
          <div className="h-[1px] bg-black  w-full"></div>
          <div className="relative  grid grid-cols-6 h-[300px]">
           <div className="flex justify-between pt-3 h-full items-center flex-col">
-          <div className="flex items-center justify-center md:gap-3 w-full">  <h1>2020</h1> <div className="w-full bg-black h-[2px]"></div></div>
-          <div className="flex items-center justify-center md:gap-3 w-full">  <h1>2024</h1> <div className="w-full bg-black h-[2px]"></div></div>
+          <div className="flex items-center justify-center md:gap-3 w-full">  <h2>2020</h2> <div className="w-full bg-black h-[2px]"></div></div>
+          <div className="flex items-center justify-center md:gap-3 w-full">  <h2>2024</h2> <div className="w-full bg-black h-[2px]"></div></div>
            
           
 
@@ -118,11 +118,11 @@ export default function Home() {
             <div className="h-full w-[2px] mx-auto bg-black"></div>
           </div>
           <div className="col-span-4 p-4  my-auto gap-3 flex flex-col items-start">
-            <h1 className=" text-xl md:text-4xl text-[#66910e]">
+            <h2 className=" text-xl md:text-4xl text-[#66910e]">
               Bachlor's of technology
-            </h1>
-            <h2 className="text-sm md:text-3xl">Computer Science</h2>
-            <h2 className="text-sm md:text-3xl flex flex-wrap ">Dr. A.P.J. Abdul Kalam Technical University</h2>
+            </h2>
+            <h3 className="text-sm md:text-3xl">Computer Science</h3>
+            <h3 className="text-sm md:text-3xl flex flex-wrap ">Dr. A.P.J. Abdul Kalam Technical University</h3>
             
           </div>
            
@@ -134,7 +134,7 @@ export default function Home() {
       {/* techStack Section */}
       <div className="text-black min-h-screen w-[100vw]">
             <ShrinkingText text={"Tech Stack"} textColor={"text-[#f13a3b]"} />
-            <h1 className="h-20"></h1>
+            <div className="h-20"></div>
             {/* Frontend secton */}
            <TechStack/>
 

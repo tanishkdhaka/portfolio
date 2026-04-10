@@ -10,12 +10,12 @@ const ReverseStretchText = ({textColor}:{textColor:string}) => {
 
   return (
   
-      <motion.h1
+      <motion.span
         style={{ scaleY,transformOrigin: "top"  }}
         className={`text-4xl font-extrabold uppercase mr-3   ${textColor}`}
       >
         <Link href={"/"}>Tanni</Link>
-      </motion.h1>
+      </motion.span>
 
   );
 };

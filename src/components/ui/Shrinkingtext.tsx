@@ -28,12 +28,12 @@ export default function ShrinkingText({ text,textColor }: { text: string ,
 
   return (
     <div ref={ref} className={`sticky z-[10] top-6 flex flex-col text-4xl justify-start items-center ${textColor}`}>
-      <motion.h1
+      <motion.div
         style={{ fontSize }}
         className="font-bold text-[4rem] sm:text-2xl"
       >
         {text}
-      </motion.h1>
+      </motion.div>
     </div>
   );
 }

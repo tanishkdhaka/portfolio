@@ -59,10 +59,10 @@ function Navbar() {
             </span>
           </button>
           <Link href="mailto:info@tanishkdhaka.com">info@tanishkdhaka.com</Link>
-          <h1 className="flex items-center gap-2">
+          <div className="flex items-center gap-2">
             <BsStars className="text-lg" />
             Available March 2025
-          </h1>
+          </div>
         </div>
       </div>
 
