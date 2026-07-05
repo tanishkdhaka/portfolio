@@ -99,6 +99,8 @@ const ENTRIES: Entry[] = [
     company: "Birla Institute of Technology and Science, Pilani",
     period: "July 2026 – Present",
     start: new Date(2026, 6), // July 2026
+     end: "Present",
+     bullets:[]
    
    
   },
@@ -108,7 +110,7 @@ const ENTRIES: Entry[] = [
     weight: "early",
     role: "B.Tech Computer Science and Engineering",
     company: "Accurate Institute of Management & Technology",
-    period: "Aug 2020 – Dec 2024",
+    period: "Aug 2020 – Aug 2024",
     start: new Date(2020, 7), // August 2020
     end: new Date(2024, 7),  // December 2024
     bullets: [
