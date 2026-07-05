@@ -99,7 +99,7 @@ const ENTRIES: Entry[] = [
     company: "Birla Institute of Technology and Science, Pilani",
     period: "July 2026 – Present",
     start: new Date(2026, 6), // July 2026
-     end: "Present",
+     end: "present",
      bullets:[]
    
    
