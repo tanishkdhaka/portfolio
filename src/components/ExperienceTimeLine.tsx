@@ -884,7 +884,8 @@ const mobileCardPositions = useMemo(() => {
           {ENTRIES.map((e) => {
             let cy: number;
             if (e.id === "accurate") {
-              cy = mToPy(e.end as Date) + mEntryH[e.id] / 2;
+            const endDate = e.end === "present" ? TODAY : e.end;
+cy = mToPy(endDate) + mEntryH[e.id] / 2;
             } else if (e.track === "professional") {
               const lane = PRO_LANE.get(e.id) ?? 0;
               cy = cardCenterY(e, lane, PRO, PRO_LANE, mMonthPx);
@@ -1016,9 +1017,11 @@ const mobileCardPositions = useMemo(() => {
           );
         })}
 
-        {EDU_PROJ.map((e) => {
-          const stripTop = toPy(e.end as Date);
-          const stripH = bH(e.start, e.end as Date);
+      {EDU_PROJ.map((e) => {
+  const endDate = e.end === "present" ? TODAY : e.end;
+
+  const stripTop = toPy(endDate);
+  const stripH = bH(e.start, e.end);
           return (
             <div
               key={`ep-${e.id}`}
