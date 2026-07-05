@@ -13,7 +13,8 @@ const CLR = {
   flexmind: "#9898c0",           // Internship
   sabar: "#4dd98a",         // Sabar Store
   nextias: "#ffaa2e",       // NEXTIAS
-  gate:"#9F2B68" // GATE
+  gate:"#9F2B68", // GATE
+  bits:"#FAA0A0" // M.Tech College
 } as const;
 
 type EntryId = keyof typeof CLR;
@@ -90,6 +91,17 @@ function measureBarH(e: Entry, barWidth: number, fontPx = FONT_PX): number {
 
 // ── Data ──────────────────────────────────────────────────────────────────
 const ENTRIES: Entry[] = [
+   {
+    id: "bits",
+    track: "education",
+    weight: "early",
+    role: "M.Tech Software Engineering",
+    company: "Birla Institute of Technology and Science, Pilani",
+    period: "July 2026 – Present",
+    start: new Date(2026, 6), // July 2026
+   
+   
+  },
   {
     id: "accurate",
     track: "education",
